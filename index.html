@@ -13,7 +13,7 @@
 </head>
 <body class="font-[Hind Madurai] bg-[#F5FFF6]">
     <!-- nav bar -->
-    <nav class="max-w-[1980px] mx-auto py-[25px] px-[60px] sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <nav class="max-w-[1800px] mx-auto pt-[25px] px-[60px] sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
         <div class="flex gap-[20px] items-center">
             <img src="assets/logo.png" alt="" class="w-[70px] h-[70px]">
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006747]">Emergency <br> Service</h2>
@@ -21,13 +21,13 @@
         <div class="flex flex-col sm:flex-row gap-[20px] ">
             <button class="text-white bg-[#41ff6b1a] py-[14px] px-[36px] rounded-[50px]">
                 <div class="flex items-center gap-[10px]">
-                <p class="text-3xl font-bold text-[#006747]">0</p>
+                <p class="text-3xl font-extrabold text-[#006747]" id="available-herats">0</p>
                 <img src="assets/heart.png" alt="" class="w-[40px] h-[40px]">
                 </div>
             </button>
             <button class="text-white bg-[#41ff6b1a] py-[14px] px-[36px] rounded-[50px]">
                 <div class="flex items-center gap-[10px]">
-                <p class="text-3xl font-bold text-[#006747]">100</p>
+                <p class="text-3xl font-extrabold text-[#006747]">100</p>
                 <img src="assets/coin.png" class="w-[40px] h-[40px]">
                 </div>
             </button>
@@ -40,28 +40,28 @@
         </div>
     </nav>
     <!-- banner -->
-    <section class="max-w-[2300px] mx-auto text-center space-y-[14px] mt-[20px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[21px] text-white">
+    <section class="max-w-[1920px] mx-auto text-center space-y-[14px] mt-[20px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[21px] text-white">
         <img src="assets/logo.png" alt="" class="mx-auto w-[92px]">
         <h2 class="text-[40px] font-bold">Emergency Service Directory</h2>
         <p class="text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
     <!-- cards -->
-    <section class="max-w-[2100px] mx-auto mt-[48px] pb-[86px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section class="max-w-[1800px] mx-auto mt-[48px] md:pb-[86px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-[20px] md:p-[0px]">
         <!-- card 1 -->
         <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] inline-block w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <button>
+                <img src="assets/emergency.png" alt="" class="bg-[#FFE3E2] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton">
                     <img src="assets/Vector.png" alt="" class="w-[30px]">
                 </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">National Emergency Number</h3>
-                <p class="text-3xl">National Emergency</p>
+                <h3 class="font-bold text-[25px]">National Emergency Number</h3>
+                <p class="text-xl">National Emergency</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">999</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">All</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">999</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">All</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -78,15 +78,17 @@
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
                 <img src="assets/police.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <button id="heartButton2">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Police Helpline Number</h3>
-                <p class="text-3xl [#5C5C5C]">Police</p>
+                <h3 class="font-bold text-[25px]">Police Helpline Number</h3>
+                <p class="text-xl [#5C5C5C]">Police</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">999</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Police</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">999</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Police</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -102,16 +104,18 @@
         <!-- card 3 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/fire-service.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/fire-service.png" alt="" class="bg-[#FFE3E2] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton3">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Fire Service Number</h3>
-                <p class="text-3xl [#5C5C5C]">Fire Service</p>
+                <h3 class="font-bold text-[25px]">Fire Service Number</h3>
+                <p class="text-xl [#5C5C5C]">Fire Service</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">999</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Fire</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">999</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Fire</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -139,7 +143,7 @@
             </div>
             <div class="flex justify-between items-center bg-[#FAFAFA] p-[10px] rounded-[8px]">
                 <div>
-                    <h3 class="font-bold text-2xl">Fire Service Number</h3>
+                    <h3 class="font-bold text-xl">Fire Service Number</h3>
                 <p class="text-xl">999</p>
                 </div>
                 <p class="text-xl">11:36:58 AM</p>
@@ -148,16 +152,18 @@
         <!-- card 5 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/ambulance.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/ambulance.png" alt="" class="bg-[#FFE3E2] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton4">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Ambulance Service</h3>
-                <p class="text-3xl [#5C5C5C]">Ambulance</p>
+                <h3 class="font-bold text-[25px]">Ambulance Service</h3>
+                <p class="text-xl [#5C5C5C]">Ambulance</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">1994-999999</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Health</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">1994-999999</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Health</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -173,16 +179,18 @@
         <!-- card 6 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/emergency.png" alt="" class="bg-[#FFE3E2] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton5">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Women & Child Helpline</h3>
-                <p class="text-3xl [#5C5C5C]">Women & Child Helpline</p>
+                <h3 class="font-bold text-[25px]">Women & Child Helpline</h3>
+                <p class="text-xl [#5C5C5C]">Women & Child Helpline</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">109</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Help</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">109</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Help</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -198,16 +206,18 @@
         <!-- card 7 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/emergency.png" alt="" class="bg-[#FFE3E2] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton6">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Anti-Corruption Helpline</h3>
-                <p class="text-3xl [#5C5C5C]">Anti-Corruption</p>
+                <h3 class="font-bold text-[25px]">Anti-Corruption Helpline</h3>
+                <p class="text-xl [#5C5C5C]">Anti-Corruption</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">106</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Govt.</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">106</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Govt.</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -223,16 +233,18 @@
         <!-- card 8 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/emergency.png" alt="" class="bg-[#FFE3E2] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton7">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Electricity Helpline</h3>
-                <p class="text-3xl [#5C5C5C]">Electricity Outage</p>
+                <h3 class="font-bold text-[25px]">Electricity Helpline</h3>
+                <p class="text-xl [#5C5C5C]">Electricity Outage</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">16216</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Electricity</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">16216</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Electricity</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -248,16 +260,18 @@
         <!-- card 9 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/brac.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton8">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Brac Helpline</h3>
-                <p class="text-3xl [#5C5C5C]">Brac</p>
+                <h3 class="font-bold text-[25px]">Brac Helpline</h3>
+                <p class="text-xl [#5C5C5C]">Brac</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">16445</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">NGO</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">16445</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">NGO</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -273,16 +287,18 @@
         <!-- card 10 -->
          <div class="space-y-[15px] bg-white p-10 shadow-md rounded-[12px] w-full">
             <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
-                <img src="assets/Vector.png" alt="" class="w-[30px]">
+                <img src="assets/Bangladesh-Railway.png" alt="" class="bg-[#DFEFFF] rounded-[16px] w-[60px] p-3">
+                <button id="heartButton9">
+                    <img src="assets/Vector.png" alt="" class="w-[30px]">
+                </button>
             </div>
             <div>
-                <h3 class="font-bold text-[30px]">Bangladesh Railway Helpline </h3>
-                <p class="text-3xl [#5C5C5C]">Bangladesh Railway</p>
+                <h3 class="font-bold text-[25px]">Bangladesh Railway Helpline </h3>
+                <p class="text-xl [#5C5C5C]">Bangladesh Railway</p>
             </div>
-            <div>
-                <h3 class="font-bold text-[30px]">163</h3>
-                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-3xl">Travel</p>
+            <div class="space-y-[10px]">
+                <h3 class="font-bold text-5xl">163</h3>
+                <p class=" text-[#5C5C5C] bg-[#F2F2F2] inline-block px-[15px] py-[5px] rounded-[19px] text-xl">Travel</p>
             </div>
             <div class="flex justify-between gap-2">
                 <button class="btn bg-white rounded-[8px] flex-1">
@@ -296,5 +312,7 @@
             </div>
         </div>
     </section>
+    <!-- js -->
+     <script src="./index.js"></script>
 </body>
 </html>
