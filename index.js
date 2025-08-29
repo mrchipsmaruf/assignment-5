@@ -28,6 +28,7 @@ function call(id, alertMessage, name, number){
         }
         else{
             alert("You Are Out Of Coins. You Need At Least 20 Coins For Call");
+            return;
         }
 
         let localTime = new Date().toLocaleTimeString();
@@ -63,3 +64,24 @@ addEventListener("click", function(){
 });
 
 // copy button function
+function addCopy(id, numberSelector, alertMessage){
+    document.getElementById(id).
+    addEventListener("click", function(){
+    let availableCopys = parseInt(document.getElementById("available-copy").innerText);
+    document.getElementById("available-copy").innerText = availableCopys + 1;
+    
+    let copyNumber = document.querySelector(numberSelector).textContent;
+        navigator.clipboard.writeText(copyNumber).then(() => {
+        alert(alertMessage);
+        })
+    });
+}
+addCopy("copy-btn", "#copy-number", "National Emergency Number Copied : 999");
+addCopy("copy-btn2", "#copy-number2", "Police Helpline Number Copied : 999");
+addCopy("copy-btn3", "#copy-number3", "Fire Service Number Copied : 999");
+addCopy("copy-btn4", "#copy-number4", "Ambulance Service Number Copied : 1994-999999");
+addCopy("copy-btn5", "#copy-number5", "Women & Child Helpline Number Copied : 109");
+addCopy("copy-btn6", "#copy-number6", "Anti-Corruption Helpline Number Copied : 106");
+addCopy("copy-btn7", "#copy-number7", "Electricity Helpline Number Copied : 16216");
+addCopy("copy-btn8", "#copy-number8", "Brac Helpline Number Copied : 16445");
+addCopy("copy-btn9", "#copy-number9", "Bangladesh Railway Helpline Number Copied : 163");
